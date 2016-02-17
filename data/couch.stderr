@@ -1,0 +1,42 @@
+
+heart_beat_kill_pid = 5502
+heart_beat_timeout = 11
+heart: Tue Sep 22 18:19:51 2015: Erlang has closed.
+Terminated
+sh: echo: I/O error
+heart: Tue Sep 22 18:19:52 2015: Executed "/usr/bin/couchdb -k" -> 256. Terminating.
+
+heart_beat_kill_pid = 3461
+heart_beat_timeout = 11
+heart: Tue Sep 22 22:13:51 2015: Erlang has closed.
+Terminated
+sh: echo: I/O error
+heart: Tue Sep 22 22:13:51 2015: Executed "/usr/bin/couchdb -k" -> 256. Terminating.
+
+heart_beat_kill_pid = 3774
+heart_beat_timeout = 11
+heart: Thu Sep 24 07:56:06 2015: Erlang has closed.
+Terminated
+sh: echo: I/O error
+heart: Thu Sep 24 07:56:06 2015: Executed "/usr/bin/couchdb -k" -> 256. Terminating.
+
+heart_beat_kill_pid = 3809
+heart_beat_timeout = 11
+heart: Fri Sep 25 08:06:44 2015: Terminated
+Erlang has closed.
+sh: echo: I/O error
+heart: Fri Sep 25 08:06:44 2015: Executed "/usr/bin/couchdb -k" -> 256. Terminating.
+
+heart_beat_kill_pid = 5450
+heart_beat_timeout = 11
+heart: Sat Sep 26 08:45:58 2015: Erlang has closed.
+Terminated
+sh: echo: I/O error
+heart: Sat Sep 26 08:45:58 2015: Executed "/usr/bin/couchdb -k" -> 256. Terminating.
+
+heart_beat_kill_pid = 5931
+heart_beat_timeout = 11
+heart: Mon Oct  5 09:52:19 2015: Erlang has closed.
+Terminated
+sh: echo: I/O error
+heart: Mon Oct  5 09:52:20 2015: Executed "/usr/bin/couchdb -k" -> 256. Terminating.

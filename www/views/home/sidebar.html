@@ -1,0 +1,12 @@
+<!-- Search -->	
+<div class="container" style="width: 150% ;">
+    <div class="input-group">
+            <input type="search" class="form-control" placeholder="Filter" ng-model="noteSearch">
+    </div>
+    <!-- Log -->
+    <div class="logs">
+        <h3>Latest Activities</h3>
+        <p  ng-repeat="logEntry in logs.slice().reverse() | limitTo:10">{{logEntry.message}}</br>{{logEntry.date}}</p>
+        <a style="float:right; margin-right: 10px;" ng-click="clearLog()" href="">Clear Log</a>
+    <div>
+<div>

@@ -1,0 +1,47 @@
+<accordion close-others="true" id="category">
+    <accordion-group ng-repeat="category in categories" is-open="status.open">
+        <accordion-heading>
+            <span class="badge count">{{category.pending}}</span>
+            <a>{{category.name}}</a>
+            <div class="buttons">
+                    <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+            </div>
+        </accordion-heading>
+        
+        <div class="note" ng-repeat="note in category.notes track by $index " id="{{ note.id  }}" >
+                <a>{{$index + 1}}</a>
+                <a>{{ note.name}} </a>
+                <a>{{( note.deadline | date:"dd-MMMM")}}</a>
+                <div class="buttons">
+                        <span class="glyphicon glyphicon-search" style=" margin-right: 10px;" ng-click="clickToOpen(note)" ></span>
+                        <span class="glyphicon glyphicon-remove" style="float:right; margin-right: 10px;" ng-click="deleteNote(category,subcategory,note)" ></span>
+                </div>
+        </div>
+        
+        <div id="sub-menu" class="row" >
+            <div class="buttons" >
+                <button type="button" class="btn btn-default" ng-click="addNote(category)" title="add new note"><span class="glyphicon glyphicon-plus"></span></button>
+                <button type="button" class="btn btn-default" ng-click="updateCategory(category)" title="edit category"><span class="glyphicon glyphicon-pencil"></span></button>
+                <button type="button" class="btn btn-default" title="delete category" ng-click="deleteCategory(category)"><span class="glyphicon glyphicon-remove"></span></button>			
+            </div>
+        </div>
+        
+    </accordion-group>
+</accordion>
+
+        
+<div id="sub-menu" class="row" >
+    <div class="buttons" >
+            <button type="button" class="btn btn-default" ng-click="addCategory()" title="add new category" ><span class="glyphicon glyphicon-plus"></span></button>
+            
+            <button type="button" class="btn btn-default" aria-expanded="false"  ng-really-message="This will delete all your Todo list and tasks. Are you sure?" ng-really-click="swipeAll()" title="initialize todo list and tasks!!"><span class="glyphicon glyphicon-fire"></span></button>
+            
+            <button type="button" class="btn btn-default" aria-expanded="false"  ng-click="refreshCalendar()" title="refresh calendar"><span class="glyphicon glyphicon-refresh"></span></button>
+    </div>
+</div>
+    
+        <!--Tasks -->
+        <!-- <div ng-controller="TaskController as taskCtrl" ng-repeat="task in tasks">{{ task.id }} {{ task.title }} {{ task.description }} {{ task.start | date:"dd-MMM" }}</div> -->
+</div> 
+<!-- End Category Panel -->
+    
